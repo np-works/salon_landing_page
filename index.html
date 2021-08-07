@@ -1,245 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset = "UTF-8">
-    <title>Salon Landing Page</title>
-    <link href = "css/styling.css" rel="stylesheet">
-    
-</head>
-<body>
-    <header> 
-        <nav> 
-            <h1 class = "nav-title" >Mocle Hair Salon</h1>
-            <div class= "c2a-container">
-                <button type="button" class = "c2a-btn" >Book an appointment!</button>
-            </div>
-        </nav>
-    </header>
-    <main>
-         <!-- Full screen video SECTION-->
-         <section class = "vid-sect">
-            <div class = "overlay-text-container">
-                <div class = "overlay-title">WELCOME TO MOCLE!</div>
-                <div class = "overlay-text">We’re the salon experience you’ve been begging for—inherently cool but inclusive, chic AF but so easy—and it doesn’t hurt that we’re obsessed with making you look and feel amazing.</div>
-                <button type="button" class = "c2a-btn btn-addons" >Book an appointment!</button>
-            </div>
-            <div class = "video-overlay"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Salon Landing Page</title>
+		<link rel="icon" href="imgs-vid/mocle-tab-icon.jpg" />
+		<link href="css/styling.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1 class="nav-title">Mocle Hair Salon</h1>
+				<div class="c2a-container">
+					<button type="button" class="c2a-btn">Book an appointment!</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Full screen video SECTION-->
+			<section class="vid-sect">
+				<div class="overlay-text-container">
+					<div class="overlay-title">WELCOME TO MOCLE!</div>
+					<div class="overlay-text">
+						We’re the salon experience you’ve been begging for—inherently cool but inclusive,
+						chic AF but so easy—and it doesn’t hurt that we’re obsessed with making you look
+						and feel amazing.
+					</div>
+					<button type="button" class="c2a-btn btn-addons">Book an appointment!</button>
+				</div>
+				<div class="video-overlay"></div>
 
-            <video playsinline autoplay muted loop poster="imgs-vid/salon-pic.png" id="bgvid">
-                <source src="imgs-vid/mocle-promo-vid.mp4" type="video/mp4">
-            </video>
-         </section>
-         <section class = "sect serv-sect">
-             <h2 class = "services-title sec-title"> Our Services </h2>
-                <div class = "list-container">
-                    <ul>
-                        <li class = "rpad">Haircuts . . . $40+</li>
-                        <li class = "rpad">Coloring . . . $60+</li>
-                        <li class = "rpad">Hair Dos . . . $100+</li>
-                        <li>Blow Dry . . . $30+</li>
-                        <li>Treatments . . . $40+</li>
-                        <li>Color Correction . . . $50+</li>
-                    </ul>
-                </div>
-         </section>
+				<video playsinline autoplay muted loop poster="imgs-vid/salon-pic.png" id="bgvid">
+					<source src="imgs-vid/mocle-promo-vid.mp4" type="video/mp4" />
+				</video>
+			</section>
+			<section class="sect serv-sect">
+				<h2 class="services-title sec-title">Our Services</h2>
+				<div class="list-container">
+					<ul>
+						<li class="rpad">Haircuts . . . $40+</li>
+						<li class="rpad">Coloring . . . $60+</li>
+						<li class="rpad">Hair Dos . . . $100+</li>
+						<li>Blow Dry . . . $30+</li>
+						<li>Treatments . . . $40+</li>
+						<li>Color Correction . . . $50+</li>
+					</ul>
+				</div>
+			</section>
 
-         <section class = "sect test-section">
-            <h2 class = "testimonials-title sec-title"> What Our Customers Say  </h2>
-            <!-- Testimonial Slider  -->
-            <div class = "slider">
-                <div class = "test-title"> Testimonials</div>
-                <div class = "test1 test-container fadeInUp">
-                    <div class ="q-column">
-                        <div class = "q-container">
-                            <q>Willie took me from box dye jet black, flat, lifeless hair to full, dimensional multicolored hair in one afternoon. He is a genius with color and truly understands tones. I showed him my goal photo and he looked at it for a brief moment and then made it happen. My new go-to place! </q>
-                            <p class="author">- Sandra Bullock</p>
-                        </div>
-                    </div>
-                    <div class = "img-column">
-                        <img class = "test-img" src = "imgs-vid/purple-hair.jpeg" alt="Woman with purple and pink hair color">
-                    </div>
-                </div>
+			<section class="sect test-section">
+				<h2 class="testimonials-title sec-title">What Our Customers Say</h2>
+				<!-- Testimonial Slider  -->
+				<div class="slider">
+					<div class="test-title">Testimonials</div>
+					<div class="test1 test-container fadeInUp">
+						<div class="q-column">
+							<div class="q-container">
+								<q
+									>Willie took me from box dye jet black, flat, lifeless hair to full,
+									dimensional multicolored hair in one afternoon. He is a genius with color
+									and truly understands tones. I showed him my goal photo and he looked at
+									it for a brief moment and then made it happen. My new go-to place!
+								</q>
+								<p class="author">- Sandra Bullock</p>
+							</div>
+						</div>
+						<div class="img-column">
+							<img
+								class="test-img"
+								src="imgs-vid/purple-hair.jpeg"
+								alt="Woman with purple and pink hair color"
+							/>
+						</div>
+					</div>
 
-                <div class = "test2 test-container fadeInUp2" >
-                    <div class ="q-column">
-                        <div class = "q-container">
-                            <q>Love this place! Needed a last minute place for a layered haircut and a quick blow out and the salon set me up with Lola who was amazing. He gave me a gorgeous blow showcasing my layers...exactly what I wanted. The salon itself is also beautiful and totally trendy. </q>
-                            <p class="author">- Jennifer Lopez</p>
-                        </div>
-                    </div>
-                    <div class = "img-column">
-                        <img class = "test-img" src = "imgs-vid/blowout.jpeg" alt="Woman with layered haircut and blowout smiling">
-                    </div>
-                </div>
+					<div class="test2 test-container fadeInUp2">
+						<div class="q-column">
+							<div class="q-container">
+								<q
+									>Love this place! Needed a last minute place for a layered haircut and a
+									quick blow out and the salon set me up with Lola who was amazing. He gave
+									me a gorgeous blow showcasing my layers...exactly what I wanted. The
+									salon itself is also beautiful and totally trendy.
+								</q>
+								<p class="author">- Jennifer Lopez</p>
+							</div>
+						</div>
+						<div class="img-column">
+							<img
+								class="test-img"
+								src="imgs-vid/blowout.jpeg"
+								alt="Woman with layered haircut and blowout smiling"
+							/>
+						</div>
+					</div>
 
-                <div class = "test3 test-container fadeInUp2">
-                    <div class ="q-column">
-                        <div class = "q-container">
-                            <q>Lace did my hair so fast and BEAUTIFUL! She looked at my dress and face and gave a 'vision' which I totally agreed with.
-                                Prompt, professional, courteous and nice. Mocle Hair Salon is 5 stars and highly recommend.</q>
-                            <p class="author">- Scarlett Johansson</p>
-                        </div>
-                    </div>
-                    <div class = "img-column">
-                        <img class = "test-img" src = "imgs-vid/wedding-hairdo.jpeg" alt="Woman with bridesmaid updo in a bridesmaid dress">
-                    </div>
-                </div>
-                <div class = "test4 test-container fadeInUp2">
-                    <div class ="q-column">
-                        <div class = "q-container">
-                            <q>Hands down, the best haircut I've had ever. LoLo did a fabulous job! I couldn't be more happier! She just knew what type of cut and style I like! I definitely will come back! Thank you Mocle Hair Salon!</q>
-                            <p class="author">- Emma Stone </p>
-                        </div>
-                    </div>
-                    <div class = "img-column">
-                        <img class = "test-img" src = "imgs-vid/blonde-haircut.jpeg" alt="Woman with bridesmaid updo in a bridesmaid dress">
-                    </div>
-                </div>
-            </div>
+					<div class="test3 test-container fadeInUp2">
+						<div class="q-column">
+							<div class="q-container">
+								<q
+									>Lace did my hair so fast and BEAUTIFUL! She looked at my dress and face
+									and gave a 'vision' which I totally agreed with. Prompt, professional,
+									courteous and nice. Mocle Hair Salon is 5 stars and highly recommend.</q
+								>
+								<p class="author">- Scarlett Johansson</p>
+							</div>
+						</div>
+						<div class="img-column">
+							<img
+								class="test-img"
+								src="imgs-vid/wedding-hairdo.jpeg"
+								alt="Woman with bridesmaid updo in a bridesmaid dress"
+							/>
+						</div>
+					</div>
+					<div class="test4 test-container fadeInUp2">
+						<div class="q-column">
+							<div class="q-container">
+								<q
+									>Hands down, the best haircut I've had ever. LoLo did a fabulous job! I
+									couldn't be more happier! She just knew what type of cut and style I
+									like! I definitely will come back! Thank you Mocle Hair Salon!</q
+								>
+								<p class="author">- Emma Stone</p>
+							</div>
+						</div>
+						<div class="img-column">
+							<img
+								class="test-img"
+								src="imgs-vid/blonde-haircut.jpeg"
+								alt="Woman with bridesmaid updo in a bridesmaid dress"
+							/>
+						</div>
+					</div>
+				</div>
 
-            <div class="dot-container">
-                <span class="dot slide1Dot" onclick="currentSlide1()"></span>
-                <span class="dot slide2Dot" onclick="currentSlide2()"></span>
-                <span class="dot slide3Dot" onclick="currentSlide3()"></span>
-                <span class="dot slide4Dot" onclick="currentSlide4()"></span>
-            </div>
+				<div class="dot-container">
+					<span class="dot slide1Dot" onclick="currentSlide1()"></span>
+					<span class="dot slide2Dot" onclick="currentSlide2()"></span>
+					<span class="dot slide3Dot" onclick="currentSlide3()"></span>
+					<span class="dot slide4Dot" onclick="currentSlide4()"></span>
+				</div>
+			</section>
 
+			<!-- <section class="sect team-section">
+				<h2 class="team-title sec-title">Meet the Team</h2>
 
-         </section>
+				<div class="slider-area">
+					<img
+						class="slider2-arrow arrow1"
+						src="imgs-vid/slider2-arrow.png"
+						alt="left slider arrow"
+						onclick="prevSlide()"
+					/>
+					<img
+						class="slider2-arrow arrow2"
+						src="imgs-vid/slider2-arrow.png"
+						alt="right slider arrow"
+						onclick="nextSlide()"
+					/>
 
-         <section class = "sect team-section">
-            <h2 class = "team-title sec-title"> Meet the Team  </h2>
+					<div class="holder">
+						<div class="slide1 slide">
+							<div class="card">
+								<img class="member-photo" src="imgs-vid/matt-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Matt</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.facebook.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/facebook-icon.png"
+											alt="facebook icon"
+										/>
+									</a>
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+									<a href="https://www.twitter.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/twitter-icon.png"
+											alt="twitter icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card">
+								<img class="member-photo" src="imgs-vid/angie-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Angie</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card">
+								<img class="member-photo" src="imgs-vid/richard-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Richard</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+									<a href="https://www.twitter.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/twitter-icon.png"
+											alt="twitter icon"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide2 slide slideIn">
+							<div class="card">
+								<img class="member-photo" src="imgs-vid/lola-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Lola</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.facebook.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/facebook-icon.png"
+											alt="facebook icon"
+										/>
+									</a>
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card">
+								<img class="member-photo" src="imgs-vid/paulo-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Paulo</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card">
+								<img class="member-photo" src="imgs-vid/jenn-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Jenn</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+									<a href="https://www.twitter.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/twitter-icon.png"
+											alt="twitter icon"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
 
-            <div class = "slider-area">
-
-                <img class = "slider2-arrow arrow1" src = "imgs-vid/slider2-arrow.png" alt="left slider arrow" onclick = "prevSlide()">
-                <img class = "slider2-arrow arrow2" src = "imgs-vid/slider2-arrow.png" alt="right slider arrow" onclick = "nextSlide()">
-                
-                <div class = "holder">
-                    <div class = "slide1 slide">
-                        <div class = "card">
-                            <img class = "member-photo" src = "imgs-vid/matt-smiling.png">
-                            <div class = "card-info-container">
-                                <div class = "member-name">Matt</div>
-                                <div class = "member-quote"><q>Service with a smile"</q></div>
-                            </div>
-                            <div class = "member-icon-container">
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/facebook-icon.png" alt="facebook icon">
-                                </a>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/instagram-icon.png" alt="instagram icon">
-                                </a>
-                                <a href="https://www.twitter.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/twitter-icon.png" alt="twitter icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "card">
-                            <img class = "member-photo" src = "imgs-vid/angie-smiling.png">
-                            <div class = "card-info-container">
-                                <div class = "member-name">Angie</div>
-                                <div class = "member-quote"><q>Service with a smile"</q></div>
-                            </div>
-                            <div class = "member-icon-container">
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/instagram-icon.png" alt="instagram icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "card">
-                            <img class = "member-photo" src = "imgs-vid/richard-smiling.png">
-                            <div class = "card-info-container">
-                                <div class = "member-name">Richard</div>
-                                <div class = "member-quote"><q>Service with a smile"</q></div>
-                            </div>
-                            <div class = "member-icon-container">
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/instagram-icon.png" alt="instagram icon">
-                                </a>
-                                <a href="https://www.twitter.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/twitter-icon.png" alt="twitter icon">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "slide2 slide slideIn">
-                        <div class = "card">
-                            <img class = "member-photo" src = "imgs-vid/lola-smiling.png">
-                            <div class = "card-info-container">
-                                <div class = "member-name">Lola</div>
-                                <div class = "member-quote"><q>Service with a smile"</q></div>
-                            </div>
-                            <div class = "member-icon-container">
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/facebook-icon.png" alt="facebook icon">
-                                </a>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/instagram-icon.png" alt="instagram icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "card">
-                            <img class = "member-photo" src = "imgs-vid/paulo-smiling.png">
-                            <div class = "card-info-container">
-                                <div class = "member-name">Paulo</div>
-                                <div class = "member-quote"><q>Service with a smile"</q></div>
-                            </div>
-                            <div class = "member-icon-container">
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/instagram-icon.png" alt="instagram icon">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "card">
-                            <img class = "member-photo" src = "imgs-vid/jenn-smiling.png">
-                            <div class = "card-info-container">
-                                <div class = "member-name">Jenn</div>
-                                <div class = "member-quote"><q>Service with a smile"</q></div>
-                            </div>
-                            <div class = "member-icon-container">
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/instagram-icon.png" alt="instagram icon">
-                                </a>
-                                <a href="https://www.twitter.com/" target="_blank">
-                                    <img class = "member-icon" src = "imgs-vid/twitter-icon.png" alt="twitter icon">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-
-    </main> 
-    <footer>
-        <!-- add social media logos -->
-        <div class = "row">
-            <div class = "footer-info-column">
-                <div class = "info">
-                    <div class = "contact-title">Contact</div>
-                    <p class = "number">#:(555)-555-5555</p>
-                    <p class = "address">5555 Street Rd <span> Malibu NJ 90000</span></p>
-                    <p class = "email">reservations@mocle.com</p>
-                </div>
-            </div>
-            <div class = "icon-container-column">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img class = "icon" src = "imgs-vid/facebook-icon.png" alt="facebook logo">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" >
-                    <img class = "icon" src = "imgs-vid/instagram-icon.png" alt="instagram logo">
-                </a>
-                <a href="https://twitter.com/" target="_blank" >
-                    <img class = "icon" src = "imgs-vid/twitter-icon.png" alt="twitter logo">
-                </a>
-                <a href="https://www.pinterest.com/" target="_blank" >
-                    <img class = "icon" src = "imgs-vid/pinterest-icon.png" alt="pinterest logo">
-                </a>
-            </div>
-        </div>
-    </footer>    
-    <script src="js/interactivity.js"></script>
-</body>
-
+			<!-- second attempt -->
+			<section class="sect team-member-section">
+				<div class="team-member-content-container">
+					<h2 class="team-title sec-title">Meet the Team</h2>
+					<div class="wrapper">
+						<div class="carousel_slider" data-target="carousel_slider">
+							<div class="card card1" data-target="card">
+								<img class="member-photo" src="imgs-vid/matt-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Matt</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.facebook.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/facebook-icon.png"
+											alt="facebook icon"
+										/>
+									</a>
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+									<a href="https://www.twitter.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/twitter-icon.png"
+											alt="twitter icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card card2" data-target="card">
+								<img class="member-photo" src="imgs-vid/angie-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Angie</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card card3" data-target="card">
+								<img class="member-photo" src="imgs-vid/richard-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Richard</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+									<a href="https://www.twitter.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/twitter-icon.png"
+											alt="twitter icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card card4" data-target="card">
+								<img class="member-photo" src="imgs-vid/lola-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Lola</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.facebook.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/facebook-icon.png"
+											alt="facebook icon"
+										/>
+									</a>
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card card5" data-target="card">
+								<img class="member-photo" src="imgs-vid/paulo-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Paulo</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="card card6" data-target="card">
+								<img class="member-photo" src="imgs-vid/jenn-smiling.png" />
+								<div class="card-info-container">
+									<div class="member-name">Jenn</div>
+									<div class="member-quote"><q>Service with a smile"</q></div>
+								</div>
+								<div class="member-icon-container">
+									<a href="https://www.instagram.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/instagram-icon.png"
+											alt="instagram icon"
+										/>
+									</a>
+									<a href="https://www.twitter.com/" target="_blank">
+										<img
+											class="member-icon"
+											src="imgs-vid/twitter-icon.png"
+											alt="twitter icon"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="arrow-wrapper">
+							<img
+								data-action="slideLeft"
+								class="slider-arrow arrow1-two"
+								src="imgs-vid/slider2-arrow.png"
+								alt="left slider arrow"
+							/>
+							<img
+								data-action="slideRight"
+								class="slider-arrow arrow2-two"
+								src="imgs-vid/slider2-arrow.png"
+								alt="right slider arrow"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<!-- add social media logos -->
+			<div class="row">
+				<div class="footer-info-column">
+					<div class="info">
+						<div class="contact-title">Contact</div>
+						<p class="number">#:(555)-555-5555</p>
+						<p class="address">5555 Street Rd <span> Malibu NJ 90000</span></p>
+						<p class="email">reservations@mocle.com</p>
+					</div>
+				</div>
+				<div class="icon-container-column">
+					<a href="https://www.facebook.com/" target="_blank">
+						<img class="icon" src="imgs-vid/facebook-icon.png" alt="facebook logo" />
+					</a>
+					<a href="https://www.instagram.com/" target="_blank">
+						<img class="icon" src="imgs-vid/instagram-icon.png" alt="instagram logo" />
+					</a>
+					<a href="https://twitter.com/" target="_blank">
+						<img class="icon" src="imgs-vid/twitter-icon.png" alt="twitter logo" />
+					</a>
+					<a href="https://www.pinterest.com/" target="_blank">
+						<img class="icon" src="imgs-vid/pinterest-icon.png" alt="pinterest logo" />
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="js/interactivity.js"></script>
+	</body>
 </html>
