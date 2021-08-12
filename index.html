@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<title>Salon Landing Page</title>
 		<link rel="icon" href="imgs-vid/mocle-tab-icon.jpg" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
 		<link href="css/styling.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -18,16 +24,19 @@
 		<main>
 			<!-- Full screen video SECTION-->
 			<section class="vid-sect">
-				<div class="overlay-text-container">
-					<div class="overlay-title">WELCOME TO MOCLE!</div>
-					<div class="overlay-text">
-						We’re the salon experience you’ve been begging for—inherently cool but inclusive,
-						chic AF but so easy—and it doesn’t hurt that we’re obsessed with making you look
-						and feel amazing.
+				<div class="video-overlay">
+					<div
+						class="overlay-text-container d-flex align-items-center justify-content-center flex-column mx-auto"
+					>
+						<div class="overlay-title">WELCOME TO MOCLE!</div>
+						<div class="overlay-text">
+							We’re the salon experience you’ve been begging for—inherently cool but
+							inclusive, chic AF but so easy—and it doesn’t hurt that we’re obsessed with
+							making you look and feel amazing.
+						</div>
+						<button type="button" class="c2a-btn btn-addons">Book an appointment!</button>
 					</div>
-					<button type="button" class="c2a-btn btn-addons">Book an appointment!</button>
 				</div>
-				<div class="video-overlay"></div>
 
 				<video playsinline autoplay muted loop poster="imgs-vid/salon-pic.png" id="bgvid">
 					<source src="imgs-vid/mocle-promo-vid.mp4" type="video/mp4" />
@@ -35,112 +44,131 @@
 			</section>
 			<section class="sect serv-sect">
 				<h2 class="services-title sec-title">Our Services</h2>
-				<div class="list-container">
-					<ul>
-						<li class="rpad">Haircuts . . . $40+</li>
-						<li class="rpad">Coloring . . . $60+</li>
-						<li class="rpad">Hair Dos . . . $100+</li>
-						<li>Blow Dry . . . $30+</li>
-						<li>Treatments . . . $40+</li>
-						<li>Color Correction . . . $50+</li>
-					</ul>
+				<div class="list-container mx-auto">
+					<div class="row text-center">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<p class="list-p">Haircuts . . . $40+</p>
+							<p class="list-p">Coloring . . . $60+</p>
+							<p class="list-p">Hair Dos . . . $100+</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<p class="list-p">Blow Dry . . . $30+</p>
+							<p class="list-p">Treatments . . . $40+</p>
+							<p class="list-p">Color Correction . . . $50+</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
+			<!-- second attempt -->
 			<section class="sect test-section">
 				<h2 class="testimonials-title sec-title">What Our Customers Say</h2>
 				<!-- Testimonial Slider  -->
-				<div class="slider">
-					<div class="test-title">Testimonials</div>
-					<div class="test1 test-container fadeInUp">
-						<div class="q-column">
-							<div class="q-container">
-								<q
-									>Willie took me from box dye jet black, flat, lifeless hair to full,
-									dimensional multicolored hair in one afternoon. He is a genius with color
-									and truly understands tones. I showed him my goal photo and he looked at
-									it for a brief moment and then made it happen. My new go-to place!
-								</q>
-								<p class="author">- Sandra Bullock</p>
+				<div class="container testimonial-container">
+					<div class="row testimonial1">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="test-text-container">
+								<div class="text-title text-center">Testimonials</div>
+								<div class="reviews review1 fadeUp slide1-test">
+									<q
+										>Willie took me from box dye jet black, flat, lifeless hair to full,
+										dimensional multicolored hair in one afternoon. He is a genius with
+										color and truly understands tones. I showed him my goal photo and he
+										looked at it for a brief moment and then made it happen. My new go-to
+										place!
+									</q>
+									<p class="author-text text-end">- Sandra Bullock</p>
+								</div>
 							</div>
 						</div>
-						<div class="img-column">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<img
-								class="test-img"
+								class="review-img slide1-test fadeUp"
 								src="imgs-vid/purple-hair.jpeg"
 								alt="Woman with purple and pink hair color"
 							/>
 						</div>
 					</div>
-
-					<div class="test2 test-container fadeInUp2">
-						<div class="q-column">
-							<div class="q-container">
-								<q
-									>Love this place! Needed a last minute place for a layered haircut and a
-									quick blow out and the salon set me up with Lola who was amazing. He gave
-									me a gorgeous blow showcasing my layers...exactly what I wanted. The
-									salon itself is also beautiful and totally trendy.
-								</q>
-								<p class="author">- Jennifer Lopez</p>
+					<div class="row testimonial2 all-testimonials">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="test-text-container">
+								<div class="text-title text-center">Testimonials</div>
+								<div class="reviews review2 fadeUp2 slide2-test">
+									<q
+										>Love this place! Needed a last minute place for a layered haircut and
+										a quick blow out and the salon set me up with Lola who was amazing. He
+										gave me a gorgeous blow showcasing my layers...exactly what I wanted.
+										The salon itself is also beautiful and totally trendy.</q
+									>
+									<p class="author-text text-end">- Jennifer Aniston</p>
+								</div>
 							</div>
 						</div>
-						<div class="img-column">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<img
-								class="test-img"
+								class="review-img fadeUp2 slide2-test"
 								src="imgs-vid/blowout.jpeg"
 								alt="Woman with layered haircut and blowout smiling"
 							/>
 						</div>
 					</div>
-
-					<div class="test3 test-container fadeInUp2">
-						<div class="q-column">
-							<div class="q-container">
-								<q
-									>Lace did my hair so fast and BEAUTIFUL! She looked at my dress and face
-									and gave a 'vision' which I totally agreed with. Prompt, professional,
-									courteous and nice. Mocle Hair Salon is 5 stars and highly recommend.</q
-								>
-								<p class="author">- Scarlett Johansson</p>
+					<div class="row testimonial3 all-testimonials">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="test-text-container">
+								<div class="text-title text-center">Testimonials</div>
+								<div class="reviews review3 fadeUp2 slide3-test">
+									<q
+										>Lace did my hair so fast and BEAUTIFUL! She looked at my dress and
+										face and gave a 'vision' which I totally agreed with. Prompt,
+										professional, courteous and nice. Mocle Hair Salon is 5 stars and
+										highly recommend.</q
+									>
+									<p class="author-text text-end">- Scarlett Johansson</p>
+								</div>
 							</div>
 						</div>
-						<div class="img-column">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<img
-								class="test-img"
+								class="review-img fadeUp2 slide3-test"
 								src="imgs-vid/wedding-hairdo.jpeg"
 								alt="Woman with bridesmaid updo in a bridesmaid dress"
 							/>
 						</div>
 					</div>
-					<div class="test4 test-container fadeInUp2">
-						<div class="q-column">
-							<div class="q-container">
-								<q
-									>Hands down, the best haircut I've had ever. LoLo did a fabulous job! I
-									couldn't be more happier! She just knew what type of cut and style I
-									like! I definitely will come back! Thank you Mocle Hair Salon!</q
-								>
-								<p class="author">- Emma Stone</p>
+					<div class="row testimonial4 all-testimonials">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="test-text-container">
+								<div class="text-title text-center">Testimonials</div>
+								<div class="reviews review4 fadeUp2 slide4-test">
+									<q
+										>Hands down, the best haircut I've had ever. LoLo did a fabulous job!
+										I couldn't be more happier! She just knew what type of cut and style I
+										like! I definitely will come back! Thank you Mocle Hair Salon!</q
+									>
+									<p class="author-text text-end">- Emma Stone</p>
+								</div>
 							</div>
 						</div>
-						<div class="img-column">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<img
-								class="test-img"
+								class="review-img slide4-test fadeUp2"
 								src="imgs-vid/blonde-haircut.jpeg"
-								alt="Woman with bridesmaid updo in a bridesmaid dress"
+								alt="Blonde woman with bob haircut"
 							/>
 						</div>
 					</div>
 				</div>
 
-				<div class="dot-container">
-					<span class="dot slide1Dot" onclick="currentSlide1()"></span>
-					<span class="dot slide2Dot" onclick="currentSlide2()"></span>
-					<span class="dot slide3Dot" onclick="currentSlide3()"></span>
-					<span class="dot slide4Dot" onclick="currentSlide4()"></span>
+				<div class="dot-container mx-auto">
+					<span class="dot1 dot slide1Dot"></span>
+					<span class="dot2 dot"></span>
+					<span class="dot3 dot"></span>
+					<span class="dot4 dot"></span>
 				</div>
 			</section>
+
+			<!-- real code -->
+			<!--  -->
 
 			<!-- <section class="sect team-section">
 				<h2 class="team-title sec-title">Meet the Team</h2>

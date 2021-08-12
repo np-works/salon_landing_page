@@ -1,88 +1,114 @@
 // VARIABLES
-const slide1Dot = document.querySelector(".slide1Dot");
-const slide2Dot = document.querySelector(".slide2Dot");
-const slide3Dot = document.querySelector(".slide3Dot");
-const slide4Dot = document.querySelector(".slide4Dot");
+const slide1 = document.getElementsByClassName("slide1-test");
+const slide2 = document.getElementsByClassName("slide2-test");
+const slide3 = document.getElementsByClassName("slide3-test");
+const slide4 = document.getElementsByClassName("slide4-test");
+const title = document.querySelector(".text-title");
 
-const test1 = document.querySelector(".test1");
-const test2 = document.querySelector(".test2");
-const test3 = document.querySelector(".test3");
-const test4 = document.querySelector(".test4");
+const dot1 = document.querySelector(".dot1");
+const dot2 = document.querySelector(".dot2");
+const dot3 = document.querySelector(".dot3");
+const dot4 = document.querySelector(".dot4");
 
 // TEST DOT SLIDER
-function currentSlide1() {
-	test1.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
-	test2.style.cssText = "visibility:hidden; opacity:0";
-	test3.style.cssText = "visibility:hidden; opacity:0";
-	test4.style.cssText = "visibility:hidden; opacity:0";
+dot1.addEventListener("click", function () {
+	for (var i = 0; i < slide1.length; i++) {
+		slide1[i].style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px); ";
+	}
+	for (var i = 0; i < slide2.length; i++) {
+		slide2[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide3.length; i++) {
+		slide3[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide4.length; i++) {
+		slide4[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	// slide1.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+	// slide2.style.cssText = "visibility:hidden; opacity:0";
+	// slide3.style.cssText = "visibility:hidden; opacity:0";
+	// slide4.style.cssText = "visibility:hidden; opacity:0";
 
-	slide1Dot.style.cssText = "background-color: black; border: 3px solid white";
-	slide2Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide3Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide4Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-}
+	dot1.style.cssText = "background-color: black; border: 3px solid white";
+	dot2.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot3.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot4.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+});
 
-function currentSlide2() {
-	test1.style.cssText = "visibility:hidden; opacity:0";
-	test2.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
-	test3.style.cssText = "visibility:hidden; opacity:0";
-	test4.style.cssText = "visibility:hidden; opacity:0";
-	slide1Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide2Dot.style.cssText = "background-color: black; border: 3px solid white";
-	slide3Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide4Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-}
+dot2.addEventListener("click", function () {
+	// slide1.style.cssText = "visibility:hidden; opacity:0";
+	// slide2.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+	// slide3.style.cssText = "visibility:hidden; opacity:0";
+	// slide4.style.cssText = "visibility:hidden; opacity:0";
 
-function currentSlide3() {
-	test1.style.cssText = "visibility:hidden; opacity:0";
-	test2.style.cssText = "visibility:hidden; opacity:0";
-	test3.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
-	test4.style.cssText = "visibility:hidden; opacity:0";
-	slide1Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide2Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide3Dot.style.cssText = "background-color: black; border: 3px solid white";
-	slide4Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-}
+	for (var i = 0; i < slide1.length; i++) {
+		slide1[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide2.length; i++) {
+		slide2[i].style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+	}
+	for (var i = 0; i < slide3.length; i++) {
+		slide3[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide4.length; i++) {
+		slide4[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	dot1.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot2.style.cssText = "background-color: black; border: 3px solid white";
+	dot3.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot4.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+});
 
-function currentSlide4() {
-	test1.style.cssText = "visibility:hidden; opacity:0";
-	test2.style.cssText = "visibility:hidden; opacity:0";
-	test3.style.cssText = "visibility:hidden; opacity:0";
-	test4.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
-	slide1Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide2Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide3Dot.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
-	slide4Dot.style.cssText = "background-color: black; border: 3px solid white";
-}
+dot3.addEventListener("click", function () {
+	// slide1.style.cssText = "visibility:hidden; opacity:0";
+	// slide2.style.cssText = "visibility:hidden; opacity:0";
+	// slide3.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+	// slide4.style.cssText = "visibility:hidden; opacity:0";
+
+	for (var i = 0; i < slide1.length; i++) {
+		slide1[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide2.length; i++) {
+		slide2[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide3.length; i++) {
+		slide3[i].style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+	}
+	for (var i = 0; i < slide4.length; i++) {
+		slide4[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	dot1.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot2.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot3.style.cssText = "background-color: black; border: 3px solid white";
+	dot4.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+});
+
+dot4.addEventListener("click", function () {
+	// slide1.style.cssText = "visibility:hidden; opacity:0";
+	// slide2.style.cssText = "visibility:hidden; opacity:0";
+	// slide3.style.cssText = "visibility:hidden; opacity:0";
+	// slide4.style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+
+	for (var i = 0; i < slide1.length; i++) {
+		slide1[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide2.length; i++) {
+		slide2[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide3.length; i++) {
+		slide3[i].style.cssText = "visibility:hidden; opacity:0";
+	}
+	for (var i = 0; i < slide4.length; i++) {
+		slide4[i].style.cssText = "visibility:visible; opacity:1; transform: translate(0, -15px)";
+	}
+
+	dot1.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot2.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot3.style.cssText = "background-color: white; border: 3px solid #cbc8c8";
+	dot4.style.cssText = "background-color: black; border: 3px solid white";
+});
 
 // TEAM SLIDER
-
-const leftArrow = document.querySelector(".arrow1");
-const rightArrow = document.querySelector(".arrow2");
-const slide1 = document.querySelector(".slide1");
-const slide2 = document.querySelector(".slide2");
-// may have to change to let
-
-// const slides = [slide1, slide2];
-// const amountofslides = slides.length;
-// // currentIndex will change each time arrows are clicked so use let
-// // currentIndex represents x which is the real value of the index
-
-function nextSlide() {
-	slide2.style.cssText = "transform: translate(100vw, 0)";
-	slide1.style.cssText = "transform: translate(100vw, 0)";
-	leftArrow.style.cssText = "display:inline-block";
-	rightArrow.style.cssText = "display:none";
-}
-
-function prevSlide() {
-	slide1.style.cssText = "transform: none";
-	slide2.style.cssText = "transform: none";
-	leftArrow.style.cssText = "display:none";
-	rightArrow.style.cssText = "display:inline-block";
-}
-
-// TEAM SLIDER 2!!
 
 const leftButton = document.querySelector("[data-action='slideLeft']");
 const rightButton = document.querySelector("[data-action='slideRight']");
