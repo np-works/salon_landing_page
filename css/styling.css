@@ -213,7 +213,7 @@ video {
 /* TEAM SECTION */
 .team-member-section {
 	background-color: rgb(211, 242, 252);
-	padding: 40px 60px 40px 60px;
+	padding: 60px;
 }
 .team-member-content-container {
 	height: 100%;
@@ -222,7 +222,7 @@ video {
 
 .wrapper {
 	height: 380px;
-	width: 100%;
+	width: 841px;
 	position: relative;
 	overflow: hidden;
 	margin: 0 auto;
@@ -236,6 +236,7 @@ video {
 	position: absolute;
 	left: 0;
 	transition: all 1s ease;
+	/* z-index: 1; */
 }
 
 .arrow-wrapper {
@@ -253,14 +254,14 @@ video {
 	text-align: center;
 	padding: 1.7rem;
 	box-sizing: border-box;
-	width: 310px;
+	width: 259px;
 	margin-right: 1rem;
 	background-color: white;
 	flex-shrink: 0;
 	border-radius: 20px;
 }
-.card6 {
-	margin-right: 0;
+.card1 {
+	margin-left: 1rem;
 }
 
 .arrow1-two {
@@ -287,6 +288,7 @@ video {
 }
 .team-title {
 	color: black;
+	padding-top: 0px;
 }
 
 .slider-area {
@@ -372,6 +374,9 @@ video {
 	opacity: 1;
 	transition: opacity 0.5s;
 	cursor: pointer;
+	width: 4rem;
+	z-index: 5;
+	position: relative;
 }
 
 .member-icon:hover {
@@ -545,8 +550,6 @@ p span {
 	}
 }
 
-
-
 @media only screen and (max-width: 1180px) {
 	.footer-info-column {
 		text-align: center;
@@ -564,3 +567,4 @@ p span {
 		text-align: -webkit-center;
 		padding: 20px;
 	}
+}

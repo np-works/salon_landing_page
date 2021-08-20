@@ -114,6 +114,7 @@ const leftButton = document.querySelector("[data-action='slideLeft']");
 const rightButton = document.querySelector("[data-action='slideRight']");
 const card = document.querySelector("[data-target = 'card']");
 const carousel = document.querySelector("[data-target= 'carousel_slider']");
+const memberIcon = document.querySelector(".member-icon");
 
 const carouselWidth = carousel.offsetWidth; /* get width of carousel*/
 // The Window.getComputedStyle() method returns an object containing the values of all CSS properties of an element, after applying active stylesheets
@@ -124,6 +125,9 @@ const cardMarginRight = Number(
 	cardStyle.marginRight.match(/\d+/g)[0]
 ); /*converts a string to a number - 
 The marginRight property sets or returns the right margin of an element.*/
+const cardWidth = Number(cardStyle.width.match(/\d+/g)[0]);
+console.log(cardWidth);
+
 console.log(carouselWidth);
 console.log(cardMarginRight);
 
@@ -132,22 +136,34 @@ const cardCount = carousel.querySelectorAll("[data-target='card']").length;
 // Define an offset property to dynamically update by clicking the button controls
 // as well as a maxX property so the carousel knows when to stop at the upper limit
 
+//  const maxX = -(
+// 	(card / 2) * carouselWidth +
+// 	cardMarginRight * (cardCount / 3) -
+// 	carouselWidth -
+// 	cardMarginRight
+// );
+
+const maxX = -(cardWidth * 6 + cardMarginRight * 7);
+
+console.log("Carousel Max = " + maxX);
+
+// Add the click events
+
+// leftButton.addEventListener("click", function () {
+// 	if (offset !== 0) {
+// 		offset += carouselWidth + cardMarginRight;
+// 		carousel.style.transform = `translateX(${offset}px)`;
+// 	}
+// });
+
 let offset = 0; /* Offset is a variable that will increment or 
 decrement by (carouselWidth + cardMarginRight, or 648) every time we click one
  of the buttons. When the page loads, we want the carousel to start 
  right at the beginning, so offset is initialized to 0*/
-const maxX = -(
-	(cardCount / 2) * carouselWidth +
-	cardMarginRight * (cardCount / 3) -
-	carouselWidth -
-	cardMarginRight
-);
-
-// Add the click events
 
 leftButton.addEventListener("click", function () {
 	if (offset !== 0) {
-		offset += carouselWidth + cardMarginRight;
+		offset += 3 * cardWidth + cardMarginRight * 3;
 		carousel.style.transform = `translateX(${offset}px)`;
 	}
 });
@@ -169,11 +185,12 @@ leftButton.addEventListener("click", function () {
 // 	}
 // });
 rightButton.addEventListener("click", function () {
-	if (offset <= maxX) {
+	if (offset <= -825) {
 		return false;
-	} else {
-		offset -= carouselWidth + cardMarginRight;
+	} else if (offset > -825) {
+		offset -= 3 * cardWidth + cardMarginRight * 3;
 
 		carousel.style.transform = `translateX(${offset}px)`;
 	}
+	memberIcon.style.cssText = "z-index:5";
 });
