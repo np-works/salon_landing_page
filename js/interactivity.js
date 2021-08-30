@@ -1,3 +1,37 @@
+// CALL TO ACTION BUTTON VARIABLES
+// const c2a_btn = document.querySelectorAll(".c2a-btn");
+const modal = document.querySelector(".modal-container");
+const backdrop = document.querySelector(".backdrop");
+const exit_icon = document.querySelector(".fas");
+const modal_wrapper = document.querySelector(".all-mod-wrapper");
+
+// const modal_wrapper = document.querySelector(".all-wrapper");
+
+document.querySelectorAll(".c2a-btn").forEach((c2a_btn) => {
+	c2a_btn.addEventListener("click", function () {
+		modal.style.cssText = "opacity:1; display:block;  ";
+		modal_wrapper.style.cssText = "opacity:1; display:block;  ";
+		backdrop.style.cssText = "display:flex; justify-items:center; align-items:center";
+		backdrop.addEventListener("click", function () {
+			modal.style.cssText = "opacity:0; display:none;";
+			modal_wrapper.style.cssText = "opacity:0; display:none;";
+			backdrop.style.cssText = "display:none;";
+		});
+		exit_icon.addEventListener("click", function () {
+			modal.style.cssText = "opacity:0; display:none; ";
+			modal_wrapper.style.cssText = "opacity:0; display:none; ";
+			backdrop.style.cssText = "display:none;";
+		});
+	});
+});
+
+// body.forEach((body) => {
+// body.addEventListener("click", function () {
+// 	body.style.cssText = "opacity: 1; background-color:pink";
+// });
+// });
+// c2a_btn.addEventListener("click", function () {});
+
 // VARIABLES
 const slide1 = document.getElementsByClassName("slide1-test");
 const slide2 = document.getElementsByClassName("slide2-test");

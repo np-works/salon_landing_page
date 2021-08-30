@@ -11,8 +11,49 @@
 			crossorigin="anonymous"
 		/>
 		<link href="css/styling.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/23fa105e54.js" crossorigin="anonymous"></script>
 	</head>
+
 	<body>
+		<div class="backdrop"></div>
+		<div class="all-mod-wrapper"></div>
+		<div class="modal-container mx-auto">
+			<div class="container p-4 mod-wrapper">
+				<i class="fas fa-times"></i>
+				<div class="modal-title text-center">Book an Appointment</div>
+				<form>
+					<div class="input-wrapper">
+						<label class="pb-1" for="first-name">Name</label>
+						<input id="first-name" type="text" name="first-name" />
+					</div>
+					<div class="input-wrapper">
+						<label class="pb-1" for="email">Email</label>
+						<input id="email" type="email" name="email" placeholder="yourname@email.com" />
+					</div>
+					<div class="input-wrapper">
+						<label for="date" class="pb-1">Date </label>
+						<input id="date" type="date" name="date" />
+					</div>
+					<div class="input-wrapper">
+						<label for="time" class="pb-1">Time </label>
+						<input id="time" type="time" name="time" />
+					</div>
+					<div class="input-wrapper">
+						<label for="services" class="pb-1">What hair services do you need? </label>
+						<input
+							id="services"
+							type="text"
+							name="services"
+							placeholder="e.g. haircut, hair coloring, etc"
+						/>
+					</div>
+				</form>
+				<div class="submit-wrapper mx-auto">
+					<div id="submit-btn">Submit</div>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
 		<header>
 			<nav>
 				<h1 class="nav-title">Mocle Hair Salon</h1>
@@ -21,7 +62,12 @@
 				</div>
 			</nav>
 		</header>
+
 		<main>
+			<!-- <div class="all-wrapper"> -->
+
+			<!-- </div> -->
+
 			<!-- Full screen video SECTION-->
 			<section class="vid-sect">
 				<div class="video-overlay">
@@ -167,167 +213,6 @@
 				</div>
 			</section>
 
-			<!-- real code -->
-			<!--  -->
-
-			<!-- <section class="sect team-section">
-				<h2 class="team-title sec-title">Meet the Team</h2>
-
-				<div class="slider-area">
-					<img
-						class="slider2-arrow arrow1"
-						src="imgs-vid/slider2-arrow.png"
-						alt="left slider arrow"
-						onclick="prevSlide()"
-					/>
-					<img
-						class="slider2-arrow arrow2"
-						src="imgs-vid/slider2-arrow.png"
-						alt="right slider arrow"
-						onclick="nextSlide()"
-					/>
-
-					<div class="holder">
-						<div class="slide1 slide">
-							<div class="card">
-								<img class="member-photo" src="imgs-vid/matt-smiling.png" />
-								<div class="card-info-container">
-									<div class="member-name">Matt</div>
-									<div class="member-quote"><q>Service with a smile"</q></div>
-								</div>
-								<div class="member-icon-container">
-									<a href="https://www.facebook.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/facebook-icon.png"
-											alt="facebook icon"
-										/>
-									</a>
-									<a href="https://www.instagram.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/instagram-icon.png"
-											alt="instagram icon"
-										/>
-									</a>
-									<a href="https://www.twitter.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/twitter-icon.png"
-											alt="twitter icon"
-										/>
-									</a>
-								</div>
-							</div>
-							<div class="card">
-								<img class="member-photo" src="imgs-vid/angie-smiling.png" />
-								<div class="card-info-container">
-									<div class="member-name">Angie</div>
-									<div class="member-quote"><q>Service with a smile"</q></div>
-								</div>
-								<div class="member-icon-container">
-									<a href="https://www.instagram.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/instagram-icon.png"
-											alt="instagram icon"
-										/>
-									</a>
-								</div>
-							</div>
-							<div class="card">
-								<img class="member-photo" src="imgs-vid/richard-smiling.png" />
-								<div class="card-info-container">
-									<div class="member-name">Richard</div>
-									<div class="member-quote"><q>Service with a smile"</q></div>
-								</div>
-								<div class="member-icon-container">
-									<a href="https://www.instagram.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/instagram-icon.png"
-											alt="instagram icon"
-										/>
-									</a>
-									<a href="https://www.twitter.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/twitter-icon.png"
-											alt="twitter icon"
-										/>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="slide2 slide slideIn">
-							<div class="card">
-								<img class="member-photo" src="imgs-vid/lola-smiling.png" />
-								<div class="card-info-container">
-									<div class="member-name">Lola</div>
-									<div class="member-quote"><q>Service with a smile"</q></div>
-								</div>
-								<div class="member-icon-container">
-									<a href="https://www.facebook.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/facebook-icon.png"
-											alt="facebook icon"
-										/>
-									</a>
-									<a href="https://www.instagram.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/instagram-icon.png"
-											alt="instagram icon"
-										/>
-									</a>
-								</div>
-							</div>
-							<div class="card">
-								<img class="member-photo" src="imgs-vid/paulo-smiling.png" />
-								<div class="card-info-container">
-									<div class="member-name">Paulo</div>
-									<div class="member-quote"><q>Service with a smile"</q></div>
-								</div>
-								<div class="member-icon-container">
-									<a href="https://www.instagram.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/instagram-icon.png"
-											alt="instagram icon"
-										/>
-									</a>
-								</div>
-							</div>
-							<div class="card">
-								<img class="member-photo" src="imgs-vid/jenn-smiling.png" />
-								<div class="card-info-container">
-									<div class="member-name">Jenn</div>
-									<div class="member-quote"><q>Service with a smile"</q></div>
-								</div>
-								<div class="member-icon-container">
-									<a href="https://www.instagram.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/instagram-icon.png"
-											alt="instagram icon"
-										/>
-									</a>
-									<a href="https://www.twitter.com/" target="_blank">
-										<img
-											class="member-icon"
-											src="imgs-vid/twitter-icon.png"
-											alt="twitter icon"
-										/>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-
-			<!-- second attempt -->
 			<section class="sect team-member-section">
 				<div class="team-member-content-container">
 					<h2 class="team-title sec-title">Meet the Team</h2>
