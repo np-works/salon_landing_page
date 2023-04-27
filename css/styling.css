@@ -242,12 +242,18 @@ nav {
 	transition: color 0.5s;
 }
 
+.fa-times {
+	position: absolute;
+	left: 16px;
+	top: 10px;
+}
+
 .fas:hover {
 	color: black;
 }
 
 .modal-title {
-	font-size: 2.7vw;
+	font-size: 24px;
 	color: black;
 	text-transform: uppercase;
 	text-transform: uppercase;
@@ -287,7 +293,7 @@ input[type="text"] {
 }
 
 label {
-	font-size: 1.3rem;
+	font-size: 18px;
 }
 
 #submit-btn {
@@ -344,17 +350,17 @@ video {
 }
 .overlay-title {
 	color: white;
-	font-size: 3rem;
-	padding-bottom: 1rem;
+	font-size: 64px;
+	padding-bottom: 24px;
 }
 .overlay-text {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 24px;
 	font-weight: 100;
 }
 
 .btn-addons {
-	margin: 30px;
+	margin: 24px;
 }
 
 /* SERVICES SECTION */
@@ -372,7 +378,7 @@ video {
 
 .list-p {
 	padding-bottom: 50px;
-	font-size: 1.8rem;
+	font-size: 24px;
 	font-weight: 300;
 }
 
@@ -407,10 +413,12 @@ video {
 
 .arrow-wrapper {
 	position: relative;
-	display: flex;
+	/* display: flex; */
 	justify-content: center;
 	height: 30px;
-	padding: 1em;
+	/* padding: 1em; */
+	text-align: center;
+	margin: 24px;
 }
 
 .arrow-left {
@@ -436,8 +444,9 @@ video {
 	border-radius: 20px;
 	border: solid 1px rgb(64, 177, 222);
 }
-.card1 {
-	margin-left: 1rem;
+
+.card6 {
+	margin-right: 0;
 }
 
 .arrow1-two {
@@ -531,7 +540,7 @@ video {
 }
 
 .card-info-container {
-	padding: 20px;
+	padding: 24px;
 }
 
 .member-name {
@@ -540,7 +549,7 @@ video {
 }
 
 .member-quote {
-	font-size: 1.5rem;
+	font-size: 18px;
 }
 
 .member-icon {
@@ -572,7 +581,7 @@ video {
 }
 
 q {
-	font-size: 1.3rem;
+	font-size: 18px;
 	font-weight: 100;
 	line-height: 150%;
 }
@@ -667,8 +676,8 @@ footer {
 }
 
 .info {
-	font-size: 1.7rem;
-	line-height: 40px;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 .icon-container-column {
@@ -677,6 +686,7 @@ footer {
 
 .contact-title {
 	font-weight: 600;
+	padding-bottom: 12px;
 }
 
 .number {
@@ -737,11 +747,4 @@ p span {
 }
 
 @media only screen and (max-width: 1180px) {
-	.info {
-		font-size: 2.3rem;
-		line-height: 50px;
-	}
-	.contact-title {
-		padding-bottom: 1.3rem;
-	}
 }
